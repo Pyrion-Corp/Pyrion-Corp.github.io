@@ -1,21 +1,14 @@
-/*CSS POUR LE HAUT DE PAGE*/
-header{
-
-}
-/*CSS POUR LE MENU DEROULANT*/
-.logopyrionnav{
-	width: 100px;
-	height: 57px;
-	margin-left: -900px;
-}
+/*CSS POUR TOUTE LA PAGE*/
 body{
 	font-family: 'Source code pro', Calibri, serif;
 	margin: 0px;
 	padding: 0px;
 }
-li{
-	margin-left: 10px;
+/*CSS POUR LE HAUT DE PAGE*/
+header{
+
 }
+/*CSS POUR LE MENU DEROULANT*/
 nav > ul{
 	margin: 0px;
 	padding: 0px;
@@ -33,7 +26,8 @@ nav li{
 	display: none;
 }
 nav{
-	width: 1178px;
+	height: 60px;
+	width: 1197px;
 	padding-left: 723px;
 	background-color: #424558;
 }
@@ -53,12 +47,12 @@ nav > ul > li > a{
 nav li:hover .submenu{
 	display: inline-block;
 	position: absolute;
-	top: 100%;
+	top: 60px;
 	left: 0px;
 	padding: 0px;
 	z-index: 1000;
 }
-.accueilnav:hover{
+.ahrefnav:hover{
 	font-size: 20px;
 	transition: 0.4s;
 }
@@ -71,9 +65,6 @@ nav li:hover .submenu{
 	color: #222538;
 	width: 270px;
 }
-.menu-accueil .submenu{
-	background-color: rgb(230, 100, 40);
-}
 .menu-boutique .submenu{
 	background-color: rgb(000, 160, 240);
 }
@@ -84,60 +75,184 @@ nav li:hover .submenu{
 	background-color: #EEE
 }
 .submenu li:hover a{
-	transition: 1.2s;
+	transition: 0.8s;
 	color: #EEE
 	font-weight: bold;
 }
-.menu-accueil .submenu li:hover{
-	transition: 1.2s;
-	background-color: rgb(210, 77, 60);
-	transition-timing-function: ease-in-out;
-}
 .menu-boutique .submenu li:hover{
-	transition: 1.2s;
+	transition: 0.8s;
 	background-color: rgb(000, 115, 200);
 	transition-timing-function: ease-in-out;
 }
 .menu-contact .submenu li:hover{
-	transition: 1.2s;
+	transition: 0.8s;
 	background-color: rgb(200, 165, 75);
 	transition-timing-function: ease-in-out;
 }
 .menu-launcher .submenu li:hover{
-	transition: 1.2s;
+	transition: 0.8s;
 	background-color: rgb(190, 190, 190);
 	transition-timing-function: ease-in-out;
 }
-/*CSS POUR LE BODY*/
-.newspyrion{
-	padding-top: 100px;
-	padding-left: 100px;
+li:hover{
+	font-size: 20px;
 }
-.dernierdevlog{
-	padding-left: 505px;
+.ahrefnav:hover{
+	font-size: 20px;
+}
+li{
+    transition: width 1.2s;
+}
+.ahrefnav{
+	transition: width 1.2s;
+}
+/*CSS POUR LA BANNIERE ?*/
+.bannierepyriontop{
+	background-color: black;
+	top: 60px;
+	bottom: 852.5px;
+	width: 100%;
+	position: absolute;
+}
+.previsubannierepyrion{
+	color: white;
+	text-align: center;
+	text-decoration: underline;
+}
+/*CSS POUR LA PARTIE STATISTIQUES*/
+.forstatsdiv{
+	background-color: lightgrey;
+	height: 60px;
+	width: 100%;
+	top: 150.5px;
+	position: absolute;
+}
+.teststats{
+	text-align: center;
+}
+/*CSS POUR LE CORPS DE LA PAGE*/
+body{
+	background-image: url(fondpyrion.png);
+}
+.contentbox{
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 250px;
+	bottom: 135px;
+	left: 300px;
+	right: 300px;
+}
+.newspyriondiv{
+	background-image: url(newpyrionimg.png);
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 355px;
+	width: 355px;
+}
+.dernierdevlogdiv{
+	background-image: url(dernierdevlogimg.png);
+	position: absolute;
+	top: 10px;
+	left: 375px;
+	right: 375px;
+	bottom: 10px;
+}
+.dernierevideoyoutube{
+	background-image: url(lastyoutubevideoimg.png);
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	height: 355px;
+	width: 355px;
+	bottom: 255px;
+}
+.actusentoutgenrediv{
+	background-image: url(ticketsupportimg.png);
+	position: absolute;
+	bottom: 60px;
+	left: 10px;
+	height: 183px;
+	width: 172.5px;
+}
+.actusentoutgenrediv2{
+	background-image: url(actuentoutgenre2img.png);
+	position: absolute;
+	bottom: 60px;
+	left: 192.5px;
+	width: 172.5px;
+	height: 183px;
+}
+.actusentoutgenrediv3{
+	background-image: url(actuentoutgenre3img.png);
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 355px;
+	height: 233px;
 }
 /*CSS POUR LE FOOTER*/
 footer{
-	width: 1903px;
-	height: 100px;
-	background-color: rgba(10, 10, 10,.87);
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 95px;
+	background-color: #3C3C3C
 }
-.copyrightfooter{
-	font-family: cursive;
-	text-align: center;
-	padding-top: 5px;
+.footerdiv{
 	color: white;
-}
-.copyrightcreated{
 	text-align: center;
-	padding-top: 5px;
-	color: white;
+	font-size: 15px;
 }
 .createdby{
 	text-decoration: underline;
 	color: white;
+	text-align: center;
+	font-size: 15px;
 }
-.cgucgv{
+.cgucgva{
+	font-size: 15px;
+	text-decoration: underline;
+	color: white;
 	text-align: left;
-	padding-left: 250px;
+	position: absolute;
+	left: 500px;
+	bottom: 50px;
+}
+.cgucgvaa{
+	font-size: 15px;
+	text-decoration: underline;
+	color: white;
+	text-align: left;
+	position: absolute;
+	left: 532px;
+	bottom: 50px;
+}
+.youtubelogoimg{
+	width: 42px;
+	height: 42px;
+	bottom: 40px;
+	left: 1450px;
+	position: absolute;
+}
+.twitchlogoimg{
+	width: 42px;
+	height: 42px;
+	bottom: 40px;
+	left: 1400px;
+	position: absolute;
+}
+.discordlogoimg{
+	width: 42px;
+	height: 42px;
+	bottom: 40px;
+	left: 1350px;
+	position: absolute;
+}
+.mailtofooter{
+	position: absolute;
+	left: 1350px;
+	bottom: 10px;
+	text-decoration: none;
+	color: white;
 }

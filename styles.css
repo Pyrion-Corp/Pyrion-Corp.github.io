@@ -33,11 +33,15 @@ nav{
 	list-style-type: none;
 }
 
+.menu li{
+	float: left;
+}
+
 .menu li a{
 	text-decoration: none;
 	color: #B2B2B2;
 	margin-left: auto;
-    margin-right: auto;
+    	margin-right: auto;
 	padding:20px;
 }
 
